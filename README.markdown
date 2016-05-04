@@ -1,13 +1,13 @@
-# Gerardo Curiel Vimfiles
+# Vimfiles
 
-**I'm [@gerard0]**, and this is my ~/.vim directory.
+This is my ~/.vim directory.
 
-[@gerard0]: http://twitter.com/gerard0
+[@muammar](http://twitter.com/muammar)
 
 ## Installation
 
 ```bash
-$ git clone git://github.com/gerardo/vimfiles.git ~/.vim
+$ git clone git://github.com/muammar/vimfiles.git ~/.vim
 ```
 
 Create symlinks:
@@ -141,12 +141,17 @@ Use `:Gdiff` on an open file to see what changes have been made to that
 file
 
 
-There are [more plugins included](https://github.com/gerardo/vimfiles/tree/master/_vimrc).
+## [vim-latex](https://github.com/jcf/vim-latex.git)
+
+Environment providing a comprehensive set of tools to view, edit and compile
+LaTeX documents using Vim. Because, why not.
+
+There are [more plugins included](https://github.com/muammar/vimfiles/tree/master/_vimrc).
 Check its homepages for more information.
 
 ## Feedback
 
-Suggestions and improvements [welcome](https://github.com/gerardo/vimfiles/issues)!
+Suggestions and improvements [welcome](https://github.com/muammar/vimfiles/issues)!
 
 ## License
 
