@@ -1,6 +1,6 @@
-# Gerardo Curiel Vimfiles
+# Vimfiles
 
-**I'm [@gerard0]**, and this is my ~/.vim directory.
+This is my ~/.vim directory.
 
 [@gerard0]: http://twitter.com/gerard0
 
@@ -140,6 +140,11 @@ hunks in the file.
 Use `:Gdiff` on an open file to see what changes have been made to that
 file
 
+
+## [vim-latex](https://github.com/jcf/vim-latex.git)
+
+Environment providing a comprehensive set of tools to view, edit and compile
+LaTeX documents using Vim. Because, why not.
 
 There are [more plugins included](https://github.com/gerardo/vimfiles/tree/master/_vimrc).
 Check its homepages for more information.
