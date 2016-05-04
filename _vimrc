@@ -50,6 +50,7 @@ NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'lambdalisue/vim-django-support'
 NeoBundle 'airblade/vim-rooter'
+NeoBundle 'jcf/vim-latex.git'
 
 call neobundle#end()
 
@@ -316,5 +317,35 @@ let g:UltiSnipsExpandTrigger="<C-e>j"
 let g:UltiSnipsJumpForwardTrigger="<C-e>j"
 let g:UltiSnipsJumpBackwardTrigger="<C-e>k"
 
+" VIM LaTeX specific configurations for Mac OS X
+filetype plugin on
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor='latex'
+let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_CompileRule_dvi = 'latex --interaction=nonstopmode $*'
+let g:Tex_CompileRule_ps = 'dvips -Pwww -o $*.ps $*.dvi'
+let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi'
+let g:Tex_CompileRule_pspdf = 'ps2pdf $*.ps'
+let g:Tex_CompileRule_dvipdf = 'dvipdfm $*.dvi'
+let g:Tex_CompileRule_pdf = 'pdflatex -shell-escape -synctex=1 --interaction=nonstopmode $*'
+let g:Tex_MultipleCompileFormats='pdf'
+let g:Tex_FormatDependency_ps  = 'dvi,ps'
+let g:Tex_FormatDependency_pspdf = 'dvi,ps,pspdf'
+let g:Tex_FormatDependency_dvipdf = 'dvi,dvipdf'
+
+if has("unix")
+  let s:uname = system("echo -n \"$(uname)\"")
+  if !v:shell_error && s:uname == "Linux"
+     " Linux-specific settings
+     let g:Tex_ViewRule_dvi = 'xdg-open'
+     let g:Tex_ViewRule_ps = 'xdg-open'
+     let g:Tex_ViewRule_pdf = 'xdg-open'
+  else
+    " OSX-specific settings
+     let g:Tex_ViewRule_dvi = 'Skim'
+     let g:Tex_ViewRule_ps = 'Preview'
+     let g:Tex_ViewRule_pdf = 'open -a Skim'
+  endif
+endif
 " Machine-local vim settings.
 silent! source ~/.vimrc.local
