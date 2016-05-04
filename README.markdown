@@ -2,7 +2,7 @@
 
 This is my ~/.vim directory.
 
-[@muammar]: http://twitter.com/muammar
+[@muammar](http://twitter.com/muammar)
 
 ## Installation
 
