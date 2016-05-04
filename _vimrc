@@ -51,6 +51,10 @@ NeoBundle 'honza/vim-snippets'
 NeoBundle 'lambdalisue/vim-django-support'
 NeoBundle 'airblade/vim-rooter'
 NeoBundle 'jcf/vim-latex.git'
+NeoBundle 'tomtom/tlib_vim'
+NeoBundle 'MarcWeber/vim-addon-mw-utils'
+NeoBundle 'garbas/vim-snipmate'
+
 
 call neobundle#end()
 
