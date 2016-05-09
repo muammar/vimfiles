@@ -132,8 +132,12 @@ set report=0 "Notify me whenever any lines have changed
 set confirm
 
 set laststatus=2
+set cursorline
+set cursorcolumn
 set number
 hi LineNr ctermfg=blue guifg=blue
+"Set vertical line at 80 chars
+"set colorcolumn=80 
 
 " Show invisible chars
 set list
