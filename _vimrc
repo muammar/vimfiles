@@ -137,7 +137,7 @@ set cursorcolumn
 set number
 hi LineNr ctermfg=blue guifg=blue
 "Set vertical line at 80 chars
-"set colorcolumn=80 
+"set colorcolumn=80
 
 " Show invisible chars
 set list
@@ -275,6 +275,8 @@ au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
 autocmd BufNewFile,BufRead *.markdown,*.textile setfiletype octopress
 
+""" Python exec script.
+autocmd FileType python nnoremap <buffer> <F9> :exec '!clear; python' shellescape(@%, 1)<cr>
 
 """ Plugins configuration
 
