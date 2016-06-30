@@ -348,9 +348,9 @@ if has("unix")
   let s:uname = system("echo -n \"$(uname)\"")
   if !v:shell_error && s:uname == "Linux"
      " Linux-specific settings
-     let g:Tex_ViewRule_dvi = 'xdg-open'
-     let g:Tex_ViewRule_ps = 'xdg-open'
-     let g:Tex_ViewRule_pdf = 'xdg-open'
+     let g:Tex_ViewRule_dvi = 'xdg-open &> /dev/null'
+     let g:Tex_ViewRule_ps = 'xdg-open &> /dev/null'
+     let g:Tex_ViewRule_pdf = 'xdg-open &> /dev/null'
   else
     " OSX-specific settings
      let g:Tex_ViewRule_dvi = 'Skim'
