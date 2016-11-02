@@ -46,7 +46,7 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'tpope/vim-git'
 
 NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'SirVer/ultisnips'
+"NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'lambdalisue/vim-django-support'
 NeoBundle 'airblade/vim-rooter'
