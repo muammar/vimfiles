@@ -135,7 +135,7 @@ set laststatus=2
 set cursorline
 set cursorcolumn
 set number
-hi LineNr ctermfg=blue guifg=blue
+hi SpellBad cterm=underline ctermfg=blue guifg=blue
 "Set vertical line at 80 chars
 "set colorcolumn=80
 
