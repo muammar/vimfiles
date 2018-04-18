@@ -21,7 +21,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Add or remove your Bundles here:
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'vim-airline/vim-airline'
-NeoBundle 'edkolev/tmuxline.vim'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'bling/vim-bufferline'
 NeoBundle 'tpope/vim-fugitive'
