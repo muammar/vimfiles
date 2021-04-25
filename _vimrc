@@ -1,6 +1,6 @@
 "" Main Vim configuration
 ""
-"" Gerardo Curiel <gerardo@gerardo.cc>
+"" Muammar El Khatib <muammar@muammar.me>
 
 "NeoBundle Scripts-----------------------------
 if has('vim_starting')
@@ -323,6 +323,9 @@ let g:UltiSnips.snipmate_ft_filter = {
 let g:UltiSnipsExpandTrigger="<C-e>j"
 let g:UltiSnipsJumpForwardTrigger="<C-e>j"
 let g:UltiSnipsJumpBackwardTrigger="<C-e>k"
+
+" Fix version deprecation error message
+let g:snipMate = { 'snippet_version' : 1 }
 
 " VIM LaTeX specific configurations for Mac OS X
 filetype plugin on
